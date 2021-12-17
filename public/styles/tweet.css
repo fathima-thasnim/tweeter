@@ -1,0 +1,69 @@
+
+.tweet{
+  border: 3px black solid;
+  margin-top: 25px;
+}
+
+.img{
+  margin: 20px;
+  float: left;
+}
+
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid black;
+  height: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.icons{
+  width: 120px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fa-heart:hover{
+  color: orange;
+}
+.fa-flag:hover{
+  color: orange;
+}
+.fa-retweet:hover{
+  color: orange;
+}
+
+
+.user{
+  margin-top: 38px;
+  float: left;
+}
+
+.header-div{
+  width: 40%;
+  height: 120px;
+}
+
+.email{
+  float: right;
+  color:gray;
+}
+
+.div-body{
+  padding-left: 30px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}

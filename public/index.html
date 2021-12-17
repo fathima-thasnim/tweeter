@@ -6,24 +6,103 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@1,300;1,600&display=swap" rel="stylesheet">
+    
+
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+    <!-- timeago.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" 
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
+    <nav class="main-nav">
+      <span class="logo">tweeter</span>
+    <div>
+      <span class="text-logo"><strong>Write </strong> a new tweet</span>
+      <i class="fas fa-angle-double-down"></i>
+    </div>
     </nav>
+      
+    <header class="main-header">
+      <div>
+        <img src="/images/profile-hex.png">
+      </div>
+      <br>
+      <div>
+        <p class="user-name"><b>Fathima </b>Thasnim</p>
+      </div>
+    </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet">
+        <div id="error" class="error"></div>
+        
+        <form action="/tweets" method="POST">
+          <label for="tweet-text"><b>What are you humming about?</b></label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div class="button-counter">
+            <button class="button" type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text"><b>140</b></output>
+          </div>
+        </form>
+      </section>
+      <section class="tweets-container">
+        <article class="tweet">
+          
+          <header>
+           <div class="header-div">
+            <img class="img" src="https://i.imgur.com/73hZDYK.png">
+            <span class="user">Newton</span>
+           </div>
+           <div class="email">@example.com</div>
+          </header>
+
+         <div class="div-body"><p>hello </p></div> 
+         <footer>
+          <div class="time-icon">
+            <h6>10 days ago</h6>
+          </div>
+        <div class="icons">
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-flag"></i>
+          <i class="fa-solid fa-retweet"></i>
+        </div>
+      </footer>
+          
+          
+        
+      </article>
+
+      </section>
+     
+    </main>
   </body>
 </html>

@@ -1,0 +1,19 @@
+.main-header{
+  display:flex;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+  
+  
+  padding:100px;
+  margin-top: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: #cc8800;
+  background-image: url("https://www.transparenttextures.com/patterns/white-bed-sheet.png");
+}
+.user-name{
+  color:white;
+  font-size: xx-large;
+}
+
