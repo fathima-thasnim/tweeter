@@ -16,3 +16,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+### Screenshots
+
+!["Desktop view"](https://github.com/fathima-thasnim/tweeter/blob/master/docs/desktop-view.png)
+!["Mobile view"](https://github.com/fathima-thasnim/tweeter/blob/master/docs/mobile-view.png)
+!["Screenshot of an empty tweet"](https://github.com/fathima-thasnim/tweeter/blob/master/docs/error-tweet.png)
