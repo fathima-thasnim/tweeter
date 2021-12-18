@@ -42,24 +42,22 @@
     integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
-  
   </head>
 
   <body>
-    <!-- Top nav bar (fixed) -->
+    <!-- Top nav bar (fixed) -->  
     <nav class="main-nav">
-      <span class="logo">tweeter</span>
-    <div>
-      <span class="text-logo"><strong>Write </strong> a new tweet</span>
-      <i class="fas fa-angle-double-down"></i>
-    </div>
+        <span class="logo">tweeter</span>
+      <div>
+        <span class="text-logo"><strong>Write </strong> a new tweet</span>
+        <i class="fas fa-angle-double-down"></i>
+      </div>
     </nav>
-  <div class="flex-container">  
+    <div class="flex-container">  
     <header class="main-header">
       <div>
         <img src="/images/profile-hex.png">
       </div>
-      
       <div>
         <p class="user-name"><b>Fathima </b>Thasnim</p>
       </div>
@@ -69,7 +67,6 @@
     <main class="container">
       <section class="new-tweet">
         <div id="error" class="error"></div>
-        
         <form action="/tweets" method="POST">
           <label for="tweet-text"><b>What are you humming about?</b></label>
           <textarea name="text" id="tweet-text"></textarea>
@@ -79,19 +76,17 @@
           </div>
         </form>
       </section>
-      <section class="tweets-container">
-        <article class="tweet">
-          
-          <header>
-           <div class="header-div">
+    <section class="tweets-container">
+      <article class="tweet">
+        <header>
+          <div class="header-div">
             <img class="img" src="https://i.imgur.com/73hZDYK.png">
             <span class="user">Newton</span>
-           </div>
-           <div class="email">@example.com</div>
-          </header>
-         
-         <div class="div-body"><p>hello </p></div> 
-         <footer>
+          </div>
+          <div class="email">@example.com</div>
+        </header>
+        <div class="div-body"><p>hello </p></div> 
+        <footer>
           <div class="time-icon">
             <h6>10 days ago</h6>
           </div>
@@ -101,14 +96,9 @@
           <i class="fa-solid fa-retweet"></i>
         </div>
       </footer>
-          
-          
-        
-      </article>
-
-      </section>
-     
-    </main>
-  </div>
-  </body>
+    </article>
+  </section>
+</main>
+</div>
+</body>
 </html>
