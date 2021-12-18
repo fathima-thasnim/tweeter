@@ -22,6 +22,7 @@ form {
   margin-top:  20px; 
   margin-bottom: 40px;
 }
+
 #tweet-text{
   border: none;
   outline: none;
@@ -29,13 +30,13 @@ form {
   background-color: #f4f1ec;
   word-wrap: break-word;
   
-  }
-  .error{
-    color: red;
-    border: 1px solid red;
-    display: none;
-    text-align: center;
-    margin: 10px;
-    padding: 2px;
-    font-family: sans-serif;
-  }
+}
+.error{
+  color: red;
+  border: 1px solid red;
+  display: none;
+  text-align: center;
+  margin: 10px;
+  padding: 2px;
+  font-family: sans-serif;
+}

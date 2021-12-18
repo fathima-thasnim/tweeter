@@ -41,18 +41,23 @@ footer{
 }
 
 
-.user{
+/* .user{
   margin-top: 38px;
   float: left;
-}
+
+} */
 
 .header-div{
-  width: 40%;
-  height: 120px;
+  /* width: 40%;
+  height: 120px; */
+  display: flex;
+  align-items: center;
+
+
 }
 
 .email{
-  float: right;
+  /* float: right; */
   color:gray;
 }
 

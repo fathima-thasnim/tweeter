@@ -15,5 +15,17 @@
 .user-name{
   color:white;
   font-size: xx-large;
+  text-align: center;
 }
 
+    /* Responsive Designs */
+
+ @media only screen and (min-width: 1024px) { 
+  .main-header {
+    max-width: 40%;
+    margin-right: 100px;
+    height: auto;
+    margin-top: 0;
+    padding: 20px;
+  }
+} 

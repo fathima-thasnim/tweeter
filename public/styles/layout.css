@@ -31,3 +31,18 @@ body {
   margin: 0 auto;
   margin-top: 15px;
 }
+
+
+   /* Responsive Designs */
+
+@media only screen and (min-width: 1024px) {
+  
+  .flex-container {
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+    margin-top: 200px;
+   }
+
+ }
+ 
